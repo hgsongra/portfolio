@@ -54,3 +54,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pg', group: :production
 gem 'responders'
 gem 'react-rails'
+gem 'paperclip-dropbox', '>= 1.1.7'
