@@ -1,0 +1,12 @@
+language: ruby
+cache: bundler
+sudo: false
+rvm: 
+  - 2.3.3
+notifications:
+  email:
+    recipients:
+      - hgsongra15@gmail.com
+      - hgsongra@ymail.com
+    on_success: change
+    on_failure: change
