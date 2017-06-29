@@ -5,18 +5,18 @@ class Api::V1::ProfileController < Api::V1::BaseController
 
   def create
     @profile = Profile.create(profile_params)
-    respond_with :api, :v1, @profile
+    respond_with :api, :v1, @profile.details
   end
 
 
   def show
-  	respond_with @profile, json: @profile
+  	respond_with @profile, json: @profile.details
   end
 
   def update
   	@profile.update_attributes(profile_params)
     # respond_with @profile, json: @profile
-    respond_with :api, :v1, @profile
+    respond_with :api, :v1, @profile.details
   end
 
   private

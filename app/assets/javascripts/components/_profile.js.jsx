@@ -16,11 +16,34 @@ var ProfileDetails = React.createClass({
 
 	profileData(){
 		return (
-			<div key={this.state.profile.id}> 
-				<h1>Fullname: {this.state.profile.first_name} {this.state.profile.last_name}</h1> 
-				<h2>Date of Birth: {this.state.profile.dob}</h2> 
-				<h2>Email: {this.state.profile.email}</h2> 
-			</div> 
+			<div>
+				<table className='table'>
+					<tbody>
+						<tr>
+							<td rowSpan='4'><img src={this.state.profile.avatar}/></td>
+						</tr>
+						<tr>
+							<td>
+								<h1>Fullname: {this.state.profile.name}</h1>
+							</td>
+						</tr>
+
+						<tr>
+							<td>
+								<h3>Date of Birth: {this.state.profile.dob}</h3>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h3>Email: {this.state.profile.email}</h3>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<hr/>
+
+				<center><h1>Winter is coming...</h1></center>
+		</div>
 		)
 	},
 
